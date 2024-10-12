@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Información</title>
+  </head>
+  <body class="relative flex flex-col min-h-screen items-center justify-center overflow-hidden bg-gradient-to-br from-blue-600 via-emerald-200 to-green-500">
+    <h1 class="text-center text-4xl font-bold text-blue-600 mb-4">Información del Usuario</h1>
+    <div class="container mx-auto">
+        <div class="w-1/2 bg-white rounded-xl mx-auto shadow-lg overflow-hidden">
+            <div class="text-center py-10">
+                <h2 class="text-2xl font-bold text-blue-600 mb-6">A continuación, ingrese su nombre y su correo</h2>
+                <!--Cuadros de ingreso de datos-->
+                <form action="/user">
+                    <div class="">
+                        <input type="text" placeholder="Nombre del donador" class="border-2 border-gray-400 placeholder-gray-400 py-1 px-2 w-1/2">
+                    </div>
+                    <div class="mt-6">
+                        <input type="email" placeholder="Correo del donador" class="border-2 border-gray-400 placeholder-gray-400 py-1 px-2 w-1/2">
+                    </div>
+                    <div class="mt-8 space-x-8">
+                        <button type="button" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded w-1/6"
+                        onclick="event.preventDefault(); window.location.href='index.html';">
+                        Cancelar</button>
+
+                        <button type="button" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded w-1/6"
+                        onclick="event.preventDefault(); window.location.href='libro.html';">
+                        Continuar</button>
+                    </div>
+                </form>
+            </div>
+            <div class="bg-blue-500/20 h-4 rounded-full">
+                <div class="bg-blue-500 w-[50%] h-full text-xs flex justify-center items-center text-white font-bold">50%</div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="/main.js"></script> <!--Importante para poder cargar los componentes vite-->
+  </body>
+</html>

@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 1</title>
+</head>
+<body class="relative flex flex-col min-h-screen items-center justify-center overflow-hidden bg-gradient-to-br from-blue-600 via-emerald-200 to-green-500">
+    <h1 class="text-4xl font-bold text-blue-600 mb-4">Datos del libro</h1>
+    <div class="container mx-auto">
+        <div class="w-1/2 bg-white rounded-xl mx-auto shadow-lg overflow-hidden">
+            <div class="text-center py-10">
+                <h2 class="text-2xl font-bold text-blue-600 mb-6">Ingrese los datos que mejor describan su libro</h2>
+                <form action="/autor">
+                    <div class="">
+                        <input type="text" placeholder="Nombre del autor" class="border-2 border-gray-400 placeholder-gray-400 py-1 px-2 w-1/2">
+                    </div>
+                </form>
+                <form action="/checkbox" method="POST" class="flex flex-col items-center">
+                    <!-- Grupo de checkbox en vertical -->
+                    <div class="mt-5 grid grid-cols-2 gap-x-8 gap-y-4 text-gray-400">
+                        <label class="flex items-center">
+                            <input type="checkbox" class="form-checkbox h-5 w-5" name="opcion1">
+                            <span class="ml-2">Ficción</span>
+                        </label>
+                        <label class="flex items-center">
+                            <input type="checkbox" class="form-checkbox h-5 w-5" name="opcion2">
+                            <span class="ml-2">Poesía</span>
+                        </label>
+                        <label class="flex items-center">
+                            <input type="checkbox" class="form-checkbox h-5 w-5" name="opcion3">
+                            <span class="ml-2">Drama</span>
+                        </label>
+                        <label class="flex items-center">
+                            <input type="checkbox" class="form-checkbox h-5 w-5" name="opcion4">
+                            <span class="ml-2">Misterio</span>
+                        </label>
+                        <label class="flex items-center">
+                            <input type="checkbox" class="form-checkbox h-5 w-5" name="opcion5">
+                            <span class="ml-2">Histórica</span>
+                        </label>
+                        <label class="flex items-center">
+                            <input type="checkbox" class="form-checkbox h-5 w-5" name="opcion6">
+                            <span class="ml-2">Terror</span>
+                        </label>
+                        <label class="flex items-center">
+                            <input type="checkbox" class="form-checkbox h-5 w-5" name="opcion7">
+                            <span class="ml-2">Romance</span>
+                        </label>
+                        <label class="flex items-center">
+                            <input type="checkbox" class="form-checkbox h-5 w-5" name="opcion8">
+                            <span class="ml-2">Infantil</span>
+                        </label>
+                        <label class="flex items-center">
+                            <input type="checkbox" class="form-checkbox h-5 w-5" name="opcion9">
+                            <span class="ml-2">Autobiografía</span>
+                        </label>
+                        <label class="flex items-center">
+                            <input type="checkbox" class="form-checkbox h-5 w-5" name="opcion10">
+                            <span class="ml-2">Novela gráfica</span>
+                        </label>
+                    </div>
+                </form>
+                <form action="/button">
+                    <!-- Botón de envío del formulario -->
+                    <div class="mt-6 flex justify-center space-x-8">
+                        <button type="button" class="bg-red-500  hover:bg-red-700 text-white font-bold py-2 px-4 rounded w-1/6" 
+                        onclick="event.preventDefault(); window.location.href='index.html';">
+                        Cancelar</button>
+
+                        <button type="submit" class="bg-green-500  hover:bg-green-700 text-white font-bold py-2 px-4 rounded w-1/6"
+                        onclick="event.preventDefault(); window.location.href='codigo.html';">
+                        Continuar</button>
+                    </div>
+                </form>
+            </div>
+            <div class="bg-blue-500/20 h-4 rounded-full">
+                <div class="bg-blue-500 w-[75%] h-full text-xs flex justify-center items-center text-white font-bold">75%</div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+</body>
+</html>
